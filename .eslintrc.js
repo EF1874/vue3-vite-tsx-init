@@ -2,7 +2,7 @@
  * @Author: 李聪
  * @Date: 2021-08-31 13:39:57
  * @LastEditors: 李聪
- * @LastEditTime: 2021-08-31 15:01:59
+ * @LastEditTime: 2021-08-31 15:22:15
  * @Description: eslint配置
  */
 module.exports = {
@@ -32,7 +32,9 @@ module.exports = {
   },
   plugins: ['vue', '@typescript-eslint'],
   rules: {
-    'no-console': ['error', { allow: ['warn', 'error'] }],
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    // 'no-console': ['error', { allow: ['warn', 'error'] }],
     'no-plusplus': ['warn', { allowForLoopAfterthoughts: true }],
     'arrow-parens': ['error', 'as-needed'],
     'no-param-reassign': ['error', { props: false }],
