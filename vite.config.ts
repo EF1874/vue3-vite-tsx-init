@@ -2,7 +2,7 @@
  * @Author: 李聪
  * @Date: 2021-08-31 10:57:39
  * @LastEditors: 李聪
- * @LastEditTime: 2021-08-31 14:57:08
+ * @LastEditTime: 2021-08-31 17:20:59
  * @Description: vite配置
  */
 import { defineConfig } from 'vite';
@@ -15,7 +15,15 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src') // 路径别名
+      // 路径别名
+      '@': resolve(__dirname, 'src'),
+      '@a': resolve(__dirname, 'src/assets'),
+      '@c': resolve(__dirname, 'src/components'),
+      '@u': resolve(__dirname, 'src/utils'),
+      '@v': resolve(__dirname, 'src/views'),
+      config: resolve(__dirname, 'src/config'),
+      common: resolve(__dirname, 'src/common'),
+      style: resolve(__dirname, 'src/style')
     }
   },
   root: './',

@@ -2,7 +2,7 @@
  * @Author: 李聪
  * @Date: 2021-08-31 10:57:39
  * @LastEditors: 李聪
- * @LastEditTime: 2021-08-31 14:07:28
+ * @LastEditTime: 2021-08-31 17:10:18
  * @Description:
 -->
 <script setup lang="ts"></script>
@@ -10,8 +10,7 @@
 <template>
   <div id="app">
     <router-link to="/" class="nav">首页</router-link>
-    <router-link :to="{ path: '/vuex' }" class="nav">Vuex</router-link>
-    <router-link :to="{ name: 'Axios' }" class="nav">Axios</router-link>
+    <router-link :to="{ name: 'About' }" class="nav">About</router-link>
     <router-view></router-view>
   </div>
 </template>

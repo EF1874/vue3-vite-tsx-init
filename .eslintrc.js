@@ -2,7 +2,7 @@
  * @Author: 李聪
  * @Date: 2021-08-31 13:39:57
  * @LastEditors: 李聪
- * @LastEditTime: 2021-08-31 15:22:15
+ * @LastEditTime: 2021-08-31 17:26:03
  * @Description: eslint配置
  */
 module.exports = {
@@ -29,6 +29,11 @@ module.exports = {
         paths: ['src']
       }
     }
+  },
+  globals: {
+    defineProps: 'readonly',
+    defineEmits: 'readonly',
+    defineExpose: 'readonly'
   },
   plugins: ['vue', '@typescript-eslint'],
   rules: {
