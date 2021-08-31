@@ -2181,7 +2181,7 @@
   dependencies:
     "fast-diff" "^1.1.2"
 
-"prettier@>=2.0.0":
+"prettier@^2.3.2", "prettier@>=2.0.0":
   "integrity" "sha512-lnJzDfJ66zkMy58OL5/NY5zp70S7Nz6KqcKkXYzn2tMVrNxvbqaBpg7H3qHaLxCJ5lNMsGuM8+ohS7cZrthdLQ=="
   "resolved" "http://192.168.1.249:4873/prettier/-/prettier-2.3.2.tgz"
   "version" "2.3.2"
