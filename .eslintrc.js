@@ -2,7 +2,7 @@
  * @Author: 李聪
  * @Date: 2021-08-31 13:39:57
  * @LastEditors: 李聪
- * @LastEditTime: 2021-08-31 14:26:10
+ * @LastEditTime: 2021-08-31 15:01:59
  * @Description: eslint配置
  */
 module.exports = {
@@ -23,8 +23,9 @@ module.exports = {
   },
   settings: {
     'import/resolver': {
+      typescript: {},
       node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
         paths: ['src']
       }
     }
@@ -46,7 +47,6 @@ module.exports = {
       'error',
       'always',
       {
-        vue: 'never',
         js: 'never',
         jsx: 'never',
         ts: 'never',

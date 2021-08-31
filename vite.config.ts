@@ -2,7 +2,7 @@
  * @Author: 李聪
  * @Date: 2021-08-31 10:57:39
  * @LastEditors: 李聪
- * @LastEditTime: 2021-08-31 14:16:10
+ * @LastEditTime: 2021-08-31 14:57:08
  * @Description: vite配置
  */
 import { defineConfig } from 'vite';
@@ -18,8 +18,10 @@ export default defineConfig({
       '@': resolve(__dirname, 'src') // 路径别名
     }
   },
+  root: './',
   base: './', // 打包路径
   server: {
+    host: '0.0.0.0',
     port: 4000, // 服务启动端口
     open: false, // 服务启动时自动打开浏览器
     cors: true // 允许跨域
