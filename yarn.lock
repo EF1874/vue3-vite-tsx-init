@@ -1268,6 +1268,11 @@
     "domutils" "^2.5.2"
     "entities" "^2.0.0"
 
+"husky@^7.0.2":
+  "integrity" "sha512-8yKEWNX4z2YsofXAMT7KvA1g8p+GxtB1ffV8XtpAEGuXNAbCV5wdNKH+qTpw8SM9fh4aMPDR+yQuKfgnreyZlg=="
+  "resolved" "http://192.168.1.249:4873/husky/-/husky-7.0.2.tgz"
+  "version" "7.0.2"
+
 "iconv-lite@^0.4.4":
   "integrity" "sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA=="
   "resolved" "http://192.168.1.249:4873/iconv-lite/-/iconv-lite-0.4.24.tgz"
