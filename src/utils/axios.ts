@@ -2,7 +2,7 @@
  * @Author: 李聪
  * @Date: 2021-08-31 11:55:02
  * @LastEditors: 李聪
- * @LastEditTime: 2021-08-31 13:57:11
+ * @LastEditTime: 2021-08-31 15:40:40
  * @Description:axios配置
  */
 
@@ -48,7 +48,7 @@ axios.interceptors.response.use(
     } else {
       ElMessage.error(`${error}`);
     }
-    return Promise.reject(error);
+    return Promise.reject(error)
   }
 );
 
