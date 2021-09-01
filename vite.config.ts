@@ -2,7 +2,7 @@
  * @Author: 李聪
  * @Date: 2021-08-31 10:57:39
  * @LastEditors: 李聪
- * @LastEditTime: 2021-09-01 13:57:31
+ * @LastEditTime: 2021-09-01 15:37:29
  * @Description: vite配置
  */
 import { defineConfig, loadEnv } from 'vite';
@@ -29,11 +29,11 @@ export default defineConfig(({ mode }) => {
         '@a': resolve(__dirname, 'src/assets'),
         '@c': resolve(__dirname, 'src/components'),
         '@u': resolve(__dirname, 'src/utils'),
-        '@v': resolve(__dirname, 'src/view'),
-        config: resolve(__dirname, 'src/config'),
+        '@v': resolve(__dirname, 'src/views'),
+        config: resolve(__dirname, 'src/configs'),
         common: resolve(__dirname, 'src/common'),
-        style: resolve(__dirname, 'src/style'),
-        type: resolve(__dirname, 'src/type')
+        style: resolve(__dirname, 'src/styles'),
+        type: resolve(__dirname, 'src/types')
       }
     },
     server: {
