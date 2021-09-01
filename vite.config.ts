@@ -2,7 +2,7 @@
  * @Author: 李聪
  * @Date: 2021-08-31 10:57:39
  * @LastEditors: 李聪
- * @LastEditTime: 2021-08-31 17:59:51
+ * @LastEditTime: 2021-09-01 10:09:58
  * @Description: vite配置
  */
 import { defineConfig, loadEnv } from 'vite';
@@ -15,6 +15,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, __dirname);
   return {
     plugins: [vue()],
+    root: './',
     // base: './', // 打包路径
     base: env.VITE_RES_URL,
     resolve: {
@@ -31,7 +32,6 @@ export default defineConfig(({ mode }) => {
         type: resolve(__dirname, 'src/type')
       }
     },
-    root: './',
     server: {
       host: '0.0.0.0',
       port: 4000, // 服务启动端口
