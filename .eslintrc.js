@@ -2,7 +2,7 @@
  * @Author: 李聪
  * @Date: 2021-08-31 13:39:57
  * @LastEditors: 李聪
- * @LastEditTime: 2021-08-31 15:22:15
+ * @LastEditTime: 2021-09-01 09:53:59
  * @Description: eslint配置
  */
 module.exports = {
@@ -33,12 +33,15 @@ module.exports = {
   globals: {
     defineProps: 'readonly',
     defineEmits: 'readonly',
-    defineExpose: 'readonly'
+    defineExpose: 'readonly',
+    GlobalEnv: 'readonly'
   },
   plugins: ['vue', '@typescript-eslint'],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    '@typescript-eslint/no-var-requires': ['off'],
+    'no-unused-vars': ['error', { varsIgnorePattern: '.*', args: 'none' }],
     // 'no-console': ['error', { allow: ['warn', 'error'] }],
     'no-plusplus': ['warn', { allowForLoopAfterthoughts: true }],
     'arrow-parens': ['error', 'as-needed'],

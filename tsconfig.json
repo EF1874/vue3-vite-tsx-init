@@ -25,18 +25,27 @@
       "@a/*": [
         "src/assets/*"
       ],
-      "@styles/*": [
-        "src/assets/styles/*"
+      "@c/*": [
+        "src/components/*"
       ],
       "@u/*": [
         "src/utils/*"
       ],
-      "@c/*": [
-        "src/components/*"
+      "@v/*": [
+        "src/view/*"
       ],
-      "@config/*": [
-        "src/configs/*"
-      ]
+      "config/*": [
+        "src/config/*"
+      ],
+      "common/*": [
+        "src/common/*"
+      ],
+      "style/*": [
+        "src/style/*"
+      ],
+      "type/*": [
+        "src/type/*"
+      ],
     },
   },
   "include": [
