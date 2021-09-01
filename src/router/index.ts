@@ -2,7 +2,7 @@
  * @Author: 李聪
  * @Date: 2021-08-31 11:24:45
  * @LastEditors: 李聪
- * @LastEditTime: 2021-09-01 09:37:02
+ * @LastEditTime: 2021-09-01 11:39:56
  * @Description: 路由配置
  */
 
@@ -19,7 +19,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/about',
     name: 'About',
-    component: About
+    component: () => import('@/view/About.vue')
   }
 ];
 
