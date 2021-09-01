@@ -2,10 +2,12 @@
  * @Author: 李聪
  * @Date: 2021-08-31 11:28:07
  * @LastEditors: 李聪
- * @LastEditTime: 2021-09-01 10:23:03
+ * @LastEditTime: 2021-09-01 13:36:44
  * @Description:页面
 -->
 <script setup lang="ts">
+import Test from '@/components/Test';
+
 const {
   VITE_MODE_NAME,
   VITE_APP_ID,
@@ -32,7 +34,9 @@ console.log(
 </script>
 
 <template>
-  <div class="about">about页面</div>
+  <div class="about">
+    <Test></Test>
+  </div>
 </template>
 
 <style lang="less" scoped>

@@ -2,11 +2,12 @@
  * @Author: 李聪
  * @Date: 2021-08-31 10:57:39
  * @LastEditors: 李聪
- * @LastEditTime: 2021-09-01 10:09:58
+ * @LastEditTime: 2021-09-01 13:57:31
  * @Description: vite配置
  */
 import { defineConfig, loadEnv } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import vueJsx from '@vitejs/plugin-vue-jsx';
 // 如果编辑器提示 path 模块找不到，则可以安装一下 @types/node -> npm i @types/node -D
 import { resolve } from 'path';
 
@@ -14,7 +15,10 @@ import { resolve } from 'path';
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, __dirname);
   return {
-    plugins: [vue()],
+    plugins: [
+      vue(),
+      vueJsx() // 插件使用
+    ],
     root: './',
     // base: './', // 打包路径
     base: env.VITE_RES_URL,
