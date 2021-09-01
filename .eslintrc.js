@@ -2,7 +2,7 @@
  * @Author: 李聪
  * @Date: 2021-08-31 13:39:57
  * @LastEditors: 李聪
- * @LastEditTime: 2021-09-01 09:53:59
+ * @LastEditTime: 2021-09-01 11:35:25
  * @Description: eslint配置
  */
 module.exports = {
@@ -12,7 +12,7 @@ module.exports = {
     node: true
   },
   extends: [
-    'plugin:vue/essential',
+    'plugin:vue/vue3-essential',
     'airbnb-base',
     'plugin:prettier/recommended' // 添加 prettier 插件
   ],
