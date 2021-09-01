@@ -2,11 +2,11 @@
  * @Author: 李聪
  * @Date: 2021-08-31 11:28:07
  * @LastEditors: 李聪
- * @LastEditTime: 2021-09-01 13:36:44
+ * @LastEditTime: 2021-09-01 15:01:54
  * @Description:页面
 -->
 <script setup lang="ts">
-import Test from '@/components/Test';
+import HelloWorld from '@c/helloWorld/HelloWorld';
 
 const {
   VITE_MODE_NAME,
@@ -35,7 +35,7 @@ console.log(
 
 <template>
   <div class="about">
-    <Test></Test>
+    <hello-world msg="测试helloWorld"></hello-world>
   </div>
 </template>
 
