@@ -39,16 +39,16 @@
       "@v/*": [
         "src/views/*"
       ],
-      "config/*": [
+      "configs/*": [
         "src/configs/*"
       ],
       "common/*": [
         "src/common/*"
       ],
-      "style/*": [
+      "styles/*": [
         "src/styles/*"
       ],
-      "type/*": [
+      "types/*": [
         "src/types/*"
       ],
     },

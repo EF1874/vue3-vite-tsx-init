@@ -30,10 +30,10 @@ export default defineConfig(({ mode }) => {
         '@c': resolve(__dirname, 'src/components'),
         '@u': resolve(__dirname, 'src/utils'),
         '@v': resolve(__dirname, 'src/views'),
-        config: resolve(__dirname, 'src/configs'),
+        configs: resolve(__dirname, 'src/configs'),
         common: resolve(__dirname, 'src/common'),
-        style: resolve(__dirname, 'src/styles'),
-        type: resolve(__dirname, 'src/types')
+        styles: resolve(__dirname, 'src/styles'),
+        types: resolve(__dirname, 'src/types')
       }
     },
     server: {
